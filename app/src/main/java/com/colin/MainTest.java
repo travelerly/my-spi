@@ -20,7 +20,8 @@ public class MainTest {
 
     public static void main(String[] args) {
 
-        // 加载可用的接口实现
+        // 加载可用的接口实现。
+        // loader() 中加载的是业务接口，其就相当于要加载的配置文件名
         ServiceLoader<DataSaveService> load = ServiceLoader.load(DataSaveService.class);
 
         // 拿到所有实现，并进行调用
